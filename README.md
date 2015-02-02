@@ -1,21 +1,21 @@
-{{color|red|Title}}
+*Title*
 =============
 
 
 Download the <Title> Package from GitHub
-{{color|red|Repo URL}}
+*Repo URL*
 
 <!-- List of attached files -->
 Contents of Solution Package: 
-* {{color|red|attachment #1}}
-* {{color|red|attchment #2}}
-* {{color|red|etc}}
+* _attachment #1_
+* _attchment #2_
+* _etc_
 
 
 Documenation and Instructions
 ---
 <!-- Description from submission form -->
-{{color|red|Description}}
+*Description*
 
 
 Copyright and License
