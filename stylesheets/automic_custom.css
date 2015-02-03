@@ -138,6 +138,12 @@ li {
   margin: 0 auto;
 }
 
+.jumbotron {
+  background-color: inherit;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
 .jumbotron h1, .jumbotron .h1 {
   font-size: 60px;
   padding-top:3%;
