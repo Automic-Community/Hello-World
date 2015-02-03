@@ -19,7 +19,7 @@ body {
 	font-family: Calibri, "helvetica neue", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	
 	color: #1e1e1e;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 /* H font sizes */
@@ -31,7 +31,6 @@ h1 {
 
 h2 {
 	font-size: 28px;
-	color: #878787;
 	font-weight: 400;
 }
 
@@ -128,11 +127,9 @@ a:focus {
 }
 
 #project_title h1 {
-/*  max-width: 50%;
-  margin: 0 auto; */
   color: #ff9e15;
   font-weight: normal;
-  font-size: 45px;
+  font-size: 60px;
   padding-top: 15px;
 }
 
@@ -142,20 +139,22 @@ a:focus {
 }
 
 #project_tagline h2{
-/*  max-width: 50%;
-  margin: 0 auto; */
   color: #505050;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 35px;
   padding-top: 15px;
 }
 
 
 #downloads {
   float: right;
-  margin-right: 9em;
   position: relative;
 }
+
+
+/* **************************************** */
+
+/* Vanilla Comment Code */
 
 div#vanilla-comments {
   padding-top: 5%;
