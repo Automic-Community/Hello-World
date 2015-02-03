@@ -124,20 +124,27 @@ a:focus {
 }
 
 #project_title {
-  max-width: 50%;
-  margin: 0 auto;
-  color: #1e1e1e;
-  text-shadow: none;
+  text-align: center;
+}
+
+#project_title h1 {
+/*  max-width: 50%;
+  margin: 0 auto; */
+  color: #ff9e15;
   font-weight: normal;
   font-size: 45px;
   padding-top: 15px;
 }
 
+
 #project_tagline {
-  max-width: 50%;
-  margin: 0 auto;
-  color: #1e1e1e;
-  text-shadow: none;
+  text-align: center;
+}
+
+#project_tagline h2{
+/*  max-width: 50%;
+  margin: 0 auto; */
+  color: #505050;
   font-weight: normal;
   font-size: 30px;
   padding-top: 15px;
