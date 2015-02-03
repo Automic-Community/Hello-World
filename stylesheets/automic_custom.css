@@ -196,8 +196,8 @@ div#vanilla-comments {
 
 
 .community_logo img {
-  width: 25%;
-  text-align: right;
+  max-width: 25% !important;
+  float: right;
   padding: 6px 2px;
   display: block;
 }
