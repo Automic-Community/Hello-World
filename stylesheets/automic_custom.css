@@ -87,29 +87,13 @@ li {
 
 #forkme_banner {
   display: inline-block;
-  position: relative;
-  top:0;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
+  padding: 20px 55px 15px 15px;
   color: #ffffff;
   background: url('http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/blacktocat.png') #ff9e15 no-repeat 95% 50%;
   font-weight: 500;
   border-radius: 5px;
+  font-size: 1.1em;
 }
-
-#a_github_logo {
-    display: block;
-    position: absolute;
-    top: 0;
-    
-}
-
-#a_github_logo img{
-  border: none;
-  box-shadow: none;
-  height: 2.3em;
-}
-
 
 
 #downloads {
