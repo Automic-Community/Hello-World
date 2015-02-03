@@ -111,6 +111,11 @@ li {
 }
 
 
+#downloads {
+  float: right;
+  position: relative;
+}
+
 /* **************************************** */
 
 /* Main Body */
@@ -152,10 +157,14 @@ li {
 }
 
 
-#downloads {
-  float: right;
-  position: relative;
+.sect {
+  padding-top: 3%;
 }
+
+
+
+
+
 
 
 /* **************************************** */
