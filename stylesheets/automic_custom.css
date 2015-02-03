@@ -1,0 +1,77 @@
+/* Custom CSS for Automic Themeing */
+
+/*
+#header_wrap {
+  background-image: url('http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/automic_community_logo.png');
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: 25%;
+  background-position: right bottom;
+}
+*/
+
+#forkme_banner {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #000;
+  background: url('http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/blacktocat.png') #fac800 no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#a_github_logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    
+}
+
+#a_github_logo img{
+  border: none;
+  box-shadow: none;
+  height: 2.3em;
+}
+
+
+#main_content_wrap {
+  padding-top: 75px;
+}
+
+#project_title {
+  padding-top: 7%;
+  color: #1d1e1e;
+  text-shadow: none;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#project_tagline {
+  max-width: 50%;
+  margin: 0 auto;
+  color: #1e1e1e;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+
+#downloads {
+  float: right;
+  margin-right: 9em;
+  position: relative;
+}
+
+div#vanilla-comments {
+  padding-top: 5%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
