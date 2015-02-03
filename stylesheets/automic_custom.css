@@ -123,6 +123,16 @@ a:focus {
   display: inline-block;
 }
 
+#project_title {
+  max-width: 50%;
+  margin: 0 auto;
+  color: #1e1e1e;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: 45px;
+  padding-top: 15px;
+}
+
 #project_tagline {
   max-width: 50%;
   margin: 0 auto;
