@@ -13,7 +13,7 @@ MeyerWeb Reset
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -39,10 +39,7 @@ p {
 
 a:hover, a:focus {text-decoration: underline;}
 
-footer a {
-  color: #F2F2F2;
-  text-decoration: underline;
-}
+
 
 em {
   font-style: italic;
@@ -166,22 +163,8 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
-.outer {
-  width: 100%;
-}
 
 
-}
-
-#downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
-}
 
 .zip_download_link {
   display: block;
@@ -214,9 +197,7 @@ Full-Width Styles
 
 
 
-#main_content {
-  padding-top: 40px;
-}
+
 
 
 

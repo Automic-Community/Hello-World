@@ -111,10 +111,18 @@ li {
 }
 
 
+
 #downloads {
-  float: right;
   position: relative;
+  width: 210px;
+  z-index: 10;
+  bottom: -40px;
+  right: 0;
+  height: 70px;
+  background: url('../images/icon_download.png') no-repeat 0% 90%;
+    float: right;
 }
+
 
 /* **************************************** */
 
@@ -125,13 +133,11 @@ li {
 }
 
 
-.inner {
-  position: relative;
+.main_body {
+  padding-top: 40px;
   width: 80%;
   margin: 0 auto;
 }
-
-
 
 #project_title {
   text-align: center;
@@ -157,16 +163,28 @@ li {
 }
 
 
-.sect {
-  padding-top: 3%;
+
+/* **************************************** */
+
+/* Footer */
+
+footer a {
+  cursor: pointer;
+  color: #ff9e15;
+  font-size: inherit;
 }
 
+footer {
+  bottom:0px;
+  background: #1e1e1e;
+  color: #878787;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  min-height: auto;
+  }
 
-
-
-
-
-
+  
 /* **************************************** */
 
 /* Vanilla Comment Code */
