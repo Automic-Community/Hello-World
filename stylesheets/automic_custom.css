@@ -1,14 +1,76 @@
 /* Custom CSS for Automic Themeing */
 
-/*
-#header_wrap {
-  background-image: url('http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/automic_community_logo.png');
-  background-repeat: no-repeat;
-  background-color: #000;
-  background-size: 25%;
-  background-position: right bottom;
+/* ********************************************************************************** */
+
+
+/* Setting font-family order to match overall Automic Theme */
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+{
+        /*
+	font-family: "helvetica neue", Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	*/
+	/* Workaround font order for cross-browser/platform issues */
+	font-family: Calibri, "helvetica neue", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
-*/
+
+body {
+	/* Workaround font order for cross-browser/platform issues */
+	font-family: Calibri, "helvetica neue", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	
+	color: #1e1e1e;
+	font-size: 15px;
+}
+
+/* H font sizes */
+
+h1 {
+	font-size: 32px;
+	color: #ff9e15;
+}
+
+h2 {
+	font-size: 28px;
+	color: #878787;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+
+a {
+	color: #878787;
+}
+
+a:hover {
+	color: #ff9e15;
+}
+
+a:focus {
+	color: #ff9e15;
+}
+
+
+
+
+/* **************************************** */
+
+/* Header / Navigation */
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+/* **************************************** */
+
 
 #forkme_banner {
   display: inline-block;
