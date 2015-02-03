@@ -194,3 +194,10 @@ div#vanilla-comments {
   margin: 0 auto;
 }
 
+
+.community_logo img {
+  width: 25%;
+  text-align: right;
+  padding: 6px 2px;
+  display: block;
+}
