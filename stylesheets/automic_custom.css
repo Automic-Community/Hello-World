@@ -40,6 +40,7 @@ h3 {
 
 h4 {
 	font-size: 20px;
+        color: #505050;
 }
 
 
@@ -56,6 +57,9 @@ a:focus {
 }
 
 
+li {
+  line-height: 1em;
+}
 
 
 /* **************************************** */
@@ -70,6 +74,16 @@ a:focus {
 
 /* **************************************** */
 
+/* Top links */
+
+.top_links {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.top_links div {
+  display: inline-block;
+}
 
 #forkme_banner {
   display: inline-block;
@@ -77,11 +91,10 @@ a:focus {
   top:0;
   z-index: 10;
   padding: 10px 50px 10px 10px;
-  color: #000;
+  color: #ffffff;
   background: url('http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/blacktocat.png') #ff9e15 no-repeat 95% 50%;
-  font-weight: 700;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  font-weight: 500;
+  border-radius: 5px;
 }
 
 #a_github_logo {
@@ -113,14 +126,7 @@ a:focus {
   margin: 0 auto;
 }
 
-.top_links {
-  max-width: 50%;
-  margin: 0 auto;
-}
 
-.top_links div {
-  display: inline-block;
-}
 
 #project_title {
   text-align: center;
