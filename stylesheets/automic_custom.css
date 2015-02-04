@@ -61,6 +61,10 @@ li {
   line-height: 1em;
 }
 
+hr {
+  border: solid 1px #878787;
+  margin-top: 5%;
+}
 
 /* **************************************** */
 
@@ -197,7 +201,7 @@ div#vanilla-comments {
 
 
 .community_logo img {
-  max-width: 25% !important;
+  max-width: 30% !important;
   float: right;
   padding: 6px 2px;
   display: block;
