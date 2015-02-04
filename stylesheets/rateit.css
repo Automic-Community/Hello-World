@@ -108,12 +108,12 @@ div.bigstars div.rateit-range
  
 div.bigstars div.rateit-hover
 {
-    background: url(star-gold32.png);
+    background: url(star-red32.png);
 }
  
 div.bigstars div.rateit-selected
 {
-    background: url(star-red32.png);
+    background: url(star-gold32.png);
 }
  
 div.bigstars div.rateit-reset
