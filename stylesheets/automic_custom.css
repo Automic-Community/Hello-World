@@ -185,8 +185,12 @@ footer {
 
 /* Vanilla Comment Code */
 
+
+.row.rating div {
+  display: inline-block;
+}
+
 div#vanilla-comments {
-  padding-top: 5%;
   max-width: 100%;
   margin: 0 auto;
 }
