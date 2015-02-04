@@ -71,6 +71,9 @@ li {
   font-size: 16px;
 }
 
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #1e1e1e;
+}
 
 /* **************************************** */
 
