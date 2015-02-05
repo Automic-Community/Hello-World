@@ -152,7 +152,16 @@ hr {
   text-align: center;
 }
 
+.tab-pane h3 {
+  text-align: center;
+}
 
+.copyright p {
+  font-size: .8em;
+  width: 80%;
+  line-height: 1.1em;
+  padding-left: 20%;
+}
 
 /* **************************************** */
 
