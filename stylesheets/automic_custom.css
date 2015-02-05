@@ -161,6 +161,12 @@ hr {
   text-align: center;
 }
 
+
+.commenting {
+  border-top: #ddd solid 1px;
+  padding-top: 3%;
+}
+
 .help {
   width: 90%;
 }
