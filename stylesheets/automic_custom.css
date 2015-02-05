@@ -152,6 +152,11 @@ hr {
   text-align: center;
 }
 
+
+.t-area {
+  min-height: 300px;
+}
+
 .tab-pane h3 {
   text-align: center;
 }
@@ -209,8 +214,8 @@ footer {
 /* Vanilla Comment Code */
 
 
-.row.rating div {
-  display: inline-block;
+.rating div {
+  display: inline;
 }
 
 div#vanilla-comments {
