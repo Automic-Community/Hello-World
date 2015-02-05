@@ -1,0 +1,12 @@
+# Site settings
+title: Automic Community 
+email: community@automic.com
+description: > # this means to ignore newlines until "baseurl:"
+  The Hub of all Things built by the Automic Community. Automate to Innovate!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://community.automic.com" # the base hostname & protocol for your site
+twitter_username: automic
+github_username:  Automic-Community
+
+# Build settings
+markdown: kramdown
