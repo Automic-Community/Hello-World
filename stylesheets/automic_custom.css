@@ -156,6 +156,18 @@ hr {
   text-align: center;
 }
 
+.help {
+  width: 90%;
+}
+
+.help h3 {
+  text-align: center;
+}
+
+.copyright {
+  width: 80%;
+  padding-left: 20%;
+}
 
 .copyright h4 {
   text-align: center;
@@ -163,10 +175,10 @@ hr {
 
 .copyright p {
   font-size: .8em;
-  width: 80%;
   line-height: 1.1em;
-  padding-left: 20%;
+  
 }
+
 
 
 /* **************************************** */
