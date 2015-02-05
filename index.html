@@ -214,7 +214,17 @@
 	  </div>
 	</div>
 
-  
+	<div class="row">
+	  <div class="col-md-5">
+	    <script>
+	      $.get("test/test.txt", function(data) {
+		$(".result").html(data);
+		alert("Load was preformed.");
+	      }
+	    </script>
+	  </div>
+	</div>
+	
 	<hr>
 	
       </div>
