@@ -154,7 +154,7 @@ hr {
 
 
 .t-area {
-  min-height: 300px;
+  min-height: 330px;
 }
 
 .tab-pane h3 {
@@ -225,7 +225,7 @@ div#vanilla-comments {
 
 
 .community_logo img {
-  max-width: 30% !important;
+  max-width: 20% !important;
   float: right;
   padding: 6px 2px;
   display: block;
