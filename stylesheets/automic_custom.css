@@ -207,6 +207,11 @@ hr {
   
 }
 
+.help .ask a.btn:before {
+        content: "\f1d7"; /* fa-weixin */
+	font-family: FontAwesome;
+	padding-right: 2px;
+}
 
 .copyright {
   width: 85%;
