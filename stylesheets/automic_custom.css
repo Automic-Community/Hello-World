@@ -67,13 +67,7 @@ hr {
 }
 
 
-.automic-btn.btn {
-  background-color: #ff9e15;
-  color: #ffffff;
-  border-radius: 5px;
-  font-size: 16px;
-  
-}
+
 
 
 
@@ -192,17 +186,26 @@ hr {
 }
 
 .help {
-  width: 90%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .help p {
-  line-height: 1.4em;
+  line-height: 1.2em;
+  font-size: .9em;
 }
 
-.help div {
-  text-align: center;
+.help div.ask {
+  margin: 5%;
 }
 
+.help .ask a.btn {
+  background-color: #ff9e15;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
 
 
 .copyright {
