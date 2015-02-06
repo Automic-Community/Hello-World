@@ -208,9 +208,9 @@ hr {
 }
 
 .help .ask a.btn:before {
-        content: "\f1d7"; /* fa-weixin */
+        content: "\f0e6"; /* fa-comments-o */
 	font-family: FontAwesome;
-	padding-right: 2px;
+	padding-right: 5px;
 }
 
 .copyright {
@@ -256,10 +256,6 @@ footer {
 
 /* Vanilla Comment Code */
 
-
-.rating div {
-  display: inline;
-}
 
 div#vanilla-comments {
   max-width: 90%;
