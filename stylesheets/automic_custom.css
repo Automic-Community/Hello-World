@@ -66,6 +66,17 @@ hr {
   margin-top: 5%;
 }
 
+
+.automic-btn.btn {
+  background-color: #ff9e15;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+
+
 /* **************************************** */
 
 /* Header / Navigation */
@@ -187,6 +198,12 @@ hr {
 .help p {
   line-height: 1.4em;
 }
+
+.help div {
+  text-align: center;
+}
+
+
 
 .copyright {
   width: 85%;
