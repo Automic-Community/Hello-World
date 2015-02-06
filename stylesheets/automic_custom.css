@@ -186,6 +186,21 @@ hr {
 }
 
 
+.row.rating {
+  background-color: #eee;
+  text-align: center;
+  border: 1px solid #ddd;
+  min-height: 130px;
+}
+
+.row.rating h3 {
+  margin-top:0px;
+}
+
+.row.rating div {
+  vertical-align: middle;
+}
+
 
 .help p {
   line-height: 1.2em;
