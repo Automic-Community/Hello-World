@@ -154,11 +154,17 @@ hr {
 
 
 .t-area {
-  min-height: 330px;
+  min-height: 400px;
+  margin-bottom: 10%;
 }
 
 .tab-pane h3 {
   text-align: center;
+}
+
+.media {
+  border-top: #ddd solid 1px;
+  margin-top: 5%;
 }
 
 #credits img {
