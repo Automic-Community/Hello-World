@@ -110,8 +110,9 @@ hr {
 .forkme a:before {
   content: "\f09b"; /* fa-github */
   font-family: FontAwesome;
-  padding-right: 5px;
+  padding-right: 10px;
   color: #1e1e1e;
+  font-size: 1.5em;
 }
 
 
