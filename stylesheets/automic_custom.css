@@ -97,14 +97,21 @@ hr {
   display: inline-block;
 }
 
-#forkme_banner {
+.forkme a {
   display: inline-block;
-  padding: 20px 55px 15px 15px;
+  padding: 5px 15px;
   color: #ffffff;
-  background: url('http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/blacktocat.png') #ff9e15 no-repeat 95% 50%;
+  background-color: #ff9e15; 
   font-weight: 500;
   border-radius: 5px;
   font-size: 1.1em;
+}
+
+.forkme a:before {
+  content: "\f09b"; /* fa-github */
+  font-family: FontAwesome;
+  padding-right: 5px;
+  color: #1e1e1e;
 }
 
 
@@ -127,11 +134,14 @@ hr {
   padding-top: 75px;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 .main_body {
   padding-top: 40px;
-  width: 80%;
-  margin: 0 auto;
+  
 }
 
 .jumbotron {
@@ -158,6 +168,8 @@ hr {
 }
 
 
+
+
 .t-area {
   min-height: 400px;
   margin-bottom: 10%;
@@ -165,12 +177,34 @@ hr {
 
 .tab-pane h3 {
   text-align: center;
+  margin-bottom: 5%;
 }
 
-.media {
+#overview .media {
   border-top: #ddd solid 1px;
+  margin-top: 5% !important;
+}
+
+#contents .downloads {
+  display: inline-block;
   margin-top: 5%;
 }
+
+#contents a {
+  padding: 10px 15px;
+  color: #ffffff;
+  background-color: #ff9e15; 
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+#contents a.download_zip:before, #contents .download_tar:before {
+  content: "\f0ed"; /* fa-cloud-download */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+
 
 #credits img {
   width: 25%;
@@ -186,21 +220,63 @@ hr {
 }
 
 
-.row.rating {
+.row.rating, .row.help {
   background-color: #eee;
-  text-align: center;
-  border: 1px solid #ddd;
-  min-height: 130px;
+  padding: 10% 5%;
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
 }
 
 .row.rating h3 {
   margin-top:0px;
 }
 
-.row.rating div {
-  vertical-align: middle;
+
+.row .rating h4, .row .help h4 {
+  margin-top: 0px;
+  padding-bottom: 0px;
 }
 
+
+.type {
+  width: 50%;
+  margin: 5%;
+}
+
+.type span.label {
+ padding-left: 9px;
+ font-size: 18px;
+ background-color: #ffffff;
+ display: block;
+ border: #1e1e1e solid 1px;
+}
+
+
+
+.rateit {
+ padding-top: 10px;
+ display: block;
+}
+
+.rateit button.rateit-reset {
+  display: none !important;
+}
+
+.share-btn {
+  display: inline-block;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 5px;
+  width: auto;
+  text-align: center;
+  background-color: #878787;
+  line-height: 1em;
+  padding: 3px;
+}
+
+.fa {
+  padding: 3px;
+}
 
 .help p {
   line-height: 1.2em;
@@ -220,9 +296,9 @@ hr {
 }
 
 .help .ask a.btn:before {
-        content: "\f0e6"; /* fa-comments-o */
-	font-family: FontAwesome;
-	padding-right: 5px;
+  content: "\f0e6"; /* fa-comments-o */
+  font-family: FontAwesome;
+  padding-right: 5px;
 }
 
 .copyright {
