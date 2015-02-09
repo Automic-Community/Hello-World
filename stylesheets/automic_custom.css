@@ -221,12 +221,13 @@ hr {
 }
 
 
-.row.rating, .row.help {
-  background-color: #eee;
+.row.rating, .row.help, .row.tags {
+  background-color: #f5f5f5;
   padding: 10% 5%;
-  border: 1px solid #1e1e1e;
-  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
 }
+
 
 .row.rating h3 {
   margin-top:0px;
@@ -239,18 +240,7 @@ hr {
 }
 
 
-.type {
-  width: 50%;
-  margin: 5%;
-}
 
-.type span.label {
- padding-left: 9px;
- font-size: 18px;
- background-color: #ffffff;
- display: block;
- border: #1e1e1e solid 1px;
-}
 
 
 
@@ -291,6 +281,66 @@ hr {
   padding: 3px;
   color: #ffffff;
 }
+
+
+.row.tags .type {
+  width: 50%;
+  margin: 5%;
+}
+
+.row.tags .type a {
+ padding: 5px 0px;
+ font-size: 18px;
+ background-color: #ffffff;
+ display: block;
+ border: #1e1e1e solid 1px;
+ border-radius: 5px;
+ color: #1e1e1e;
+ text-align: center;
+}
+
+.row.tags .type a:before {
+   content: "\f12e"; /* fa-puzzle-piece */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+.row.tags a {
+  display: block;
+  color: #505050;
+  font-size: .9em;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
+.row.tags a:hover {
+  color: #ff9e15;
+}
+
+.row.tags a.comp-product:before {
+  content: "\f0e8"; /* fa-sitemap */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+.row.tags a.comp-versions:before {
+  content: "\f046"; /* fa-check-square-o */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+.row.tags a.comp-platforms:before {
+  content: "\f108"; /* fa-desktop */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+.row.tags a.comp-apps:before {
+  content: "\f10a"; /* fa-tablet */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
 
 .help p {
   line-height: 1.2em;
