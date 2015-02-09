@@ -342,13 +342,26 @@ hr {
 }
 
 
+.row.help a.supported {
+  padding-top: 5%;
+  font-weight: 600;
+  color: #505050;
+}
+
+.row.help a.supported:before {
+  content: "\f129"; /* fa-info */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+
 .help p {
   line-height: 1.2em;
   font-size: .9em;
 }
 
 .help div.ask {
-  margin: 5%;
+  margin: 0 0 5% 5%;
 }
 
 .help .ask a.btn {
