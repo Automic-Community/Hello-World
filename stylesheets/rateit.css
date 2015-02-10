@@ -127,3 +127,22 @@ div.bigstars div.rateit-reset:hover
 {
     background: url(star-white32.png);
 }
+
+/* Medium Stars */
+
+div.medstars div.rateit-range
+{
+    background: url(star-white25px.png);
+    height: 25px;
+}
+ 
+div.medstars div.rateit-hover
+{
+    background: url(star-orange25px.png);
+}
+ 
+div.medstars div.rateit-selected
+{
+    background: url(star-yellow25px.png);
+}
+ 

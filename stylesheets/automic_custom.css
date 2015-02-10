@@ -20,6 +20,7 @@ body {
 	
 	color: #1e1e1e;
 	font-size: 18px;
+        line-height: 1.3em;
 }
 
 /* H font sizes */
@@ -88,52 +89,18 @@ hr {
   background-color: #1e1e1e;
 }
 
-/* **************************************** */
-
-/* Top links */
 
 
-.top_links div {
-  display: inline-block;
-}
-
-.forkme a {
-  display: inline-block;
-  padding: 5px 15px;
-  color: #ffffff;
-  background-color: #ff9e15; 
-  font-weight: 500;
-  border-radius: 5px;
-  font-size: 1.1em;
-}
-
-.forkme a:before {
-  content: "\f09b"; /* fa-github */
-  font-family: FontAwesome;
-  padding-right: 10px;
-  color: #1e1e1e;
-  font-size: 1.5em;
-}
 
 
-#downloads {
-  position: relative;
-  width: 210px;
-  z-index: 10;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
-  float: right;
-}
+
 
 
 /* **************************************** */
 
 /* Main Body */
 
-#main_content_wrap {
-  padding-top: 75px;
-}
+
 
 .container {
   width: 80%;
@@ -221,6 +188,20 @@ hr {
 }
 
 
+
+/* Sidebar */
+
+
+#downloads {
+  position: relative;
+  width: 210px;
+  z-index: 10;
+  right: 0;
+  height: 70px;
+  background: url('../images/icon_download.png') no-repeat 0% 90%;
+}
+
+
 .row.rating, .row.help, .row.tags {
   background-color: #f5f5f5;
   padding: 10% 5%;
@@ -240,7 +221,21 @@ hr {
 }
 
 
+a.forkme {
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #505050;
+}
 
+a.forkme:hover {
+  color: #ff9e15;
+}
+
+a.forkme:before {
+  content: "\f09b"; /* fa-github */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
 
 
 
@@ -255,6 +250,10 @@ hr {
 
 
 <!-- Social Share Buttons -->
+
+div.social-buttons {
+  padding-top: 3%;
+}
 
 .social-buttons a.share-btn {
   color: #ffffff;
@@ -283,28 +282,6 @@ hr {
 }
 
 
-.row.tags .type {
-  width: 50%;
-  margin: 5%;
-}
-
-.row.tags .type a {
- padding: 5px 0px;
- font-size: 18px;
- background-color: #ffffff;
- display: block;
- border: #1e1e1e solid 1px;
- border-radius: 5px;
- color: #1e1e1e;
- text-align: center;
-}
-
-.row.tags .type a:before {
-   content: "\f12e"; /* fa-puzzle-piece */
-  font-family: FontAwesome;
-  padding-right: 5px;
-}
-
 .row.tags a {
   display: block;
   color: #505050;
@@ -316,6 +293,14 @@ hr {
 .row.tags a:hover {
   color: #ff9e15;
 }
+
+.row.tags a.type:before {
+  content: "\f12e"; /* fa-puzzle-piece */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+
 
 .row.tags a.comp-product:before {
   content: "\f0e8"; /* fa-sitemap */
@@ -361,7 +346,7 @@ hr {
 }
 
 .help div.ask {
-  margin: 0 0 5% 5%;
+  margin: 5%;
 }
 
 .help .ask a.btn {
