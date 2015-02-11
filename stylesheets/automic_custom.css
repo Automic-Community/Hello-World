@@ -236,6 +236,21 @@ hr {
 }
 
 
+/* Star Rating CSS */
+
+.rating-xs {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.rating-container .rating-stars {
+  color: #ff9e15;
+}
+
+.star-rating .clear-rating {
+  display: none;
+}
+
 .row .rating h4, .row .help h4 {
   margin-top: 0px;
   padding-bottom: 0px;

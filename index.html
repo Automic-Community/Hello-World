@@ -10,6 +10,8 @@
     
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="javascripts/star-rating.min.js" type="text/javascript"></script>
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://www.automic.com/assets/css/custom_front.css">
@@ -18,12 +20,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/rateit.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/star-rating.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/automic_custom.css">
-      
-    <!--
-    <link rel="stylesheet" type="text/css" media="screen" href="http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/github_css/custom.css">
-    -->
+  
     
     <!-- Start of Google Analytics Code -->
     
@@ -276,35 +275,16 @@
 		  <h4>Version X</h4>
 		  <a class="forkme" href="https://github.com/Automic-Community/Hello-World">View on GitHub</a>
 		  
-		  <div id="products">
-		  <div class="rateit medstars" data-productid="1" data-rateit-starwidth="25" data-rateit-starheight="25"></div>
+		  <div class="star-rating">
+		    <input id="hello-world" class="rating" min=1 max=10 step=2 data-size="xs">
+		      <script>
+			$("#hello-world").on("rating.change", function(event, value, caption) {
+			  $("#hello-world").rating("refresh", {disabled: true, showClear: false});
+			});
+		      </script>
 		  </div>
-		  <script type ="text/javascript">
-		     //we bind only to the rateit controls within the products div
-		     $('#products .rateit').bind('rated reset', function (e) {
-			 var ri = $(this);
-		 
-			 //if the use pressed reset, it will get value: 0 (to be compatible with the HTML range control), we could check if e.type == 'reset', and then set the value to  null .
-			 var value = ri.rateit('value');
-			 var productID = ri.data('productid'); // if the product id was in some hidden field: ri.closest('li').find('input[name="productid"]').val()
-		 
-			 //maybe we want to disable voting?
-			 ri.rateit('readonly', true);
-		 
-			 $.ajax({
-			     url: 'rateit.aspx', //your server side script
-			     data: { id: productID, value: value }, //our data
-			     type: 'POST',
-			     success: function (data) {
-				 $('#response').append('<li>' + data + '</li>');
-		 
-			     },
-			     error: function (jxhr, msg, err) {
-				 $('#response').append('<li style="color:red">' + msg + '</li>');
-			     }
-			 });
-		     });
-		 </script>
+		  
+
 		  
 		  <div class="social-buttons" style="padding-top:3%;">
 		    <a target="_blank" class="share-btn twitter" href="http://twitter.com/share?url=[PAGE-URL]&text=Check%20out%20this%20awesome%20[TYPE]%20on%20the%20%23AutomicCommunity%20eXchange&via=automic">
@@ -376,9 +356,6 @@
       </div>
     </div>
   </footer>
-    
-  <!-- RateIt Star JQuery -->
-  <script src="src/jquery.rateit.js" type="text/javascript"></script>
     
   </body>
 </html>
