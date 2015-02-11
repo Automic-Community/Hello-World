@@ -145,60 +145,67 @@
 	      </div>
 	      
 	      <div id="contents" class="tab-pane">
-		<h3>Contents of Package</h3>
-		<ul>
-		  <li>Attachment #1</li>
-		  <li>Attachment #2</li>
-		  <li>Documentation</li>
-		</ul>
-		<div class="downloads">
-		  <a class="download_zip" href="https://github.com/Automic-Community/Hello-World/zipball/master">Download .zip</a> 
-		  <a class="download_tar" href="https://github.com/Automic-Community/Hello-World/tarball/master">Download .tar</a>  
-		</div>
-		</div>
-	      <div id="compatibility" class="tab-pane">
-		<h3>Compatibility</h3>
-		  <div class="row">
-		    <div class="col-md-6">
-		      <h4>Products</h4>
-		      <ul>
-			<li>ONE Automation</li>
-			<li>AppWorx</li>
-		      </ul>
-		    </div>
-		    <div class="col-md-6">
-		      <h4>Versions</h4>
-		      <ul>
-			<li>10.0</li>
-			<li>11.1</li>
-		      </ul>
-		    </div>
+		<div class="row">
+		  <h3>Contents of Package</h3>
+		  <ul>
+		    <li>Attachment #1</li>
+		    <li>Attachment #2</li>
+		    <li>Documentation</li>
+		  </ul>
+		  <div class="downloads">
+		    <a class="download_zip" href="https://github.com/Automic-Community/Hello-World/zipball/master">Download .zip</a>   
+		    <a class="download_tar" href="https://github.com/Automic-Community/Hello-World/tarball/master">Download .tar</a>    
 		  </div>
-		  <div class="row">
-		    <div class="col-md-6">
-		      <h4>Platforms</h4>
-		      <ul>
-			<li>Windows Server 2012</li>
-			<li>Linux</li>
-			<li>OS/400</li>
-		      </ul>
+		</div>
+	      </div>
+	      
+	      <div id="compatibility" class="tab-pane">
+		<div class="row">
+		  <h3>Compatibility</h3>
+		    <div class="row">
+		      <div class="col-md-6">
+			<h4>Products</h4>
+			<ul>
+			  <li>ONE Automation</li>
+			  <li>AppWorx</li>
+			</ul>
+		      </div>
+		      <div class="col-md-6">
+			<h4>Versions</h4>
+			<ul>
+			  <li>10.0</li>
+			  <li>11.1</li>
+			</ul>
+		      </div>
 		    </div>
-		     <div class="col-md-6">
-		      <h4>Applications</h4>
-		      <ul>
-			<li>Salesforce</li>
-			<li>ServiceNow</li>
-			<li>Oracle E-Business Suite</li>
-		      </ul>
+		    <div class="row">
+		      <div class="col-md-6">
+			<h4>Platforms</h4>
+			<ul>
+			  <li>Windows Server 2012</li>
+			  <li>Linux</li>
+			  <li>OS/400</li>
+			</ul>
+		      </div>
+		       <div class="col-md-6">
+			<h4>Applications</h4>
+			<ul>
+			  <li>Salesforce</li>
+			  <li>ServiceNow</li>
+			  <li>Oracle E-Business Suite</li>
+			</ul>
+		      </div>
 		    </div>
 		  </div>
 	      </div>
 	      
 	      <div id="credits" class="tab-pane">
-		<h3>Created by....</h3>
-		<div>
-		<img src="http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/davetheminion.jpg">
-		<p>Dave the Minion</p>
+		<div class="row">
+		  <h3>Created by....</h3>
+		  <div>
+		  <img src="http://2515f77b98275c9472dc-6e270f88c81ed2e83631a388f81e6c55.r5.cf2.rackcdn.com/davetheminion.jpg">
+		  <p>Dave the Minion</p>
+		  </div>
 		</div>
 	      </div>
 	      
@@ -260,7 +267,36 @@
 		  <h4>Version X</h4>
 		  <a class="forkme" href="https://github.com/Automic-Community/Hello-World">View on GitHub</a>
 		  
-		  <div class="rateit medstars" data-rateit-starwidth="25" data-rateit-starheight="25"></div>
+		  <div id="products">
+		  <div class="rateit medstars" data-productid="1" data-rateit-starwidth="25" data-rateit-starheight="25"></div>
+		  </div>
+		  <script type ="text/javascript">
+		     //we bind only to the rateit controls within the products div
+		     $('#products .rateit').bind('rated reset', function (e) {
+			 var ri = $(this);
+		 
+			 //if the use pressed reset, it will get value: 0 (to be compatible with the HTML range control), we could check if e.type == 'reset', and then set the value to  null .
+			 var value = ri.rateit('value');
+			 var productID = ri.data('productid'); // if the product id was in some hidden field: ri.closest('li').find('input[name="productid"]').val()
+		 
+			 //maybe we want to disable voting?
+			 ri.rateit('readonly', true);
+		 
+			 $.ajax({
+			     url: 'rateit.aspx', //your server side script
+			     data: { id: productID, value: value }, //our data
+			     type: 'POST',
+			     success: function (data) {
+				 $('#response').append('<li>' + data + '</li>');
+		 
+			     },
+			     error: function (jxhr, msg, err) {
+				 $('#response').append('<li style="color:red">' + msg + '</li>');
+			     }
+			 });
+		     });
+		 </script>
+		  
 		  <div class="social-buttons" style="padding-top:3%;">
 		    <a target="_blank" class="share-btn twitter" href="http://twitter.com/share?url=[PAGE-URL]&text=Check%20out%20this%20awesome%20[TYPE]%20on%20the%20%23AutomicCommunity%20eXchange&via=automic">
 		      <i class="fa fa-twitter"></i>
@@ -292,7 +328,6 @@
 	    </div>
 	    
 	    <div class="row help">
-		<h4>Looking for some help?</h4>
 		<a class="supported" href="#">Community Supported</a>
 		<div class="ask">
 		  <a href="https://community.automic.com" target="_blank" class="btn">Ask the Community</a>

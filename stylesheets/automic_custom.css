@@ -21,6 +21,7 @@ body {
 	color: #1e1e1e;
 	font-size: 18px;
         line-height: 1.3em;
+        background-color: #f5f5f5;
 }
 
 /* H font sizes */
@@ -139,8 +140,11 @@ hr {
 
 
 .t-area {
-  min-height: 400px;
   margin-bottom: 10%;
+}
+
+.t-area li.active {
+
 }
 
 .tab-pane h3 {
@@ -148,9 +152,27 @@ hr {
   margin-bottom: 5%;
 }
 
+.tab-pane.active {
+  background-color: #ffffff;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e3e3e3;
+  border-radius: 0px 0px 5px 5px;
+  min-height: 325px;
+}
+
+.tab-pane.active .row {
+  margin-top: 0px;
+  padding: 0 2%;
+}
+
 #overview .media {
   border-top: #ddd solid 1px;
   margin-top: 5% !important;
+}
+
+#overview .row .media {
+  display: none;
 }
 
 #contents .downloads {
@@ -203,7 +225,7 @@ hr {
 
 
 .row.rating, .row.help, .row.tags {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   padding: 10% 5%;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
@@ -286,7 +308,7 @@ div.social-buttons {
   display: block;
   color: #505050;
   font-size: .9em;
-  line-height: 1.3em;
+  line-height: 1.5em;
   font-weight: 500;
 }
 
@@ -329,8 +351,12 @@ div.social-buttons {
 
 .row.help a.supported {
   padding-top: 5%;
-  font-weight: 600;
+  font-weight: 500;
   color: #505050;
+}
+
+.row.help a.supported:hover {
+  color: #ff9e15;
 }
 
 .row.help a.supported:before {
