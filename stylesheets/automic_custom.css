@@ -175,9 +175,22 @@ hr {
   display: none;
 }
 
+
+#contents li {
+  list-style-type: none;
+}
+
+#contents li:before {
+  content: "\f1c9"; /* fa-file-code-o */
+  font-family: FontAwesome;
+  padding-right: 10px;
+}
+
+
 #contents .downloads {
   display: inline-block;
   margin-top: 5%;
+  padding-left: 10px;
 }
 
 #contents a {
@@ -187,6 +200,7 @@ hr {
   font-weight: 300;
   border-radius: 5px;
 }
+
 
 #contents a.download_zip:before, #contents .download_tar:before {
   content: "\f0ed"; /* fa-cloud-download */
