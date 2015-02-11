@@ -204,9 +204,8 @@ hr {
   display: inline-block;
 }
 
-.commenting {
-  border-top: #ddd solid 1px;
-  padding-top: 3%;
+.row.commenting .row {
+  margin: 0px;
 }
 
 
