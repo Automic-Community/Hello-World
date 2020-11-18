@@ -18,16 +18,11 @@ Documenation and Instructions
 *Description*
 
 
-Copyright and License
----
+###### Copyright and License: 
+Broadcom does not support, maintain or warrant Solutions, Templates, Actions and any other content published on the Community and is subject to Broadcom Community [Terms and Conditions](https://community.broadcom.com/termsandconditions)
 
-Solutions, Templates and other content available on the Community eXchange subject to the standard Community [Terms of Service] (http://preview.automic.com/community_terms_of_service).
-Automic does not support, maintain or warrant any Solution, Templates and/or other content available from the Community eXchange.
-
-
-Questions or Need Help? 
----
-Any questions or comments? Converse with your fellow Users in the [Automic Community] (http://community.automic.com).
+###### Questions or Need Help? 
+Join the [Automic Community Integrations](https://community.broadcom.com/communities/community-home?CommunityKey=83e49dd4-b93e-464a-a343-2bb1e51c13ec) to discuss this integration.
 
 
 
